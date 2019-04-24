@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One-Armed Bandit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <h1>ONE-ARMED BANDIT</h1>
+
+        <section class="game">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </section>
+
+        <section class="play">
+            <input type="number" placeholder="Money to spend" id="bid">
+            <button id="start">SPIN ME</button>
+        </section>
+
+        <section class="panel">YOUR WALLET: <span class="wallet"></span></section>
+
+        <section class="score">
+            <span class="result"></span> You played <span class="number"></span> times, with <span class="win"></span>
+            wins
+            and <span class="loss"></span> losses.
+        </section>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-image: url(background.jpg);
+    font-family: 'Ultra', serif;
+}
+
+.wrap {
+    width: 80%;
+    margin: 5vh auto 0;
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.game {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100vh;
+
+
+}
+
+.game div.color {
+    height: 30vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid #2c1c1d;
+    background-position: center;
+    background-size: cover;
+}
+
+.play {
+    text-align: center;
+}
+
+.play input {
+    height: 90px;
+    font-size: 30px;
+    padding: 20px;
+    width: 30%;
+    border: 3px solid #2c1c1d;
+    text-align: center;
+    font-family: 'Ultra', serif;
+}
+
+.play button {
+    width: 30%;
+    height: 90px;
+    text-align: center;
+    padding: 20px 60px;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px dashed red;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 6px;
+    font-family: 'Ultra', serif;
+    animation: blinking 0.8s infinite;
+}
+
+.blinking {}
+
+@keyframes blinking {
+    0% {
+        background-color: red;
+    }
+
+    49% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.panel {
+    margin: 80px 0 40px;
+    font-size: 26px;
+
+}
+
+.panel,
+.score {
+    font-size: 26px;
+    text-align: center;
+}
+
+.panel span,
+.score span {
+    font-weight: bold;
+    color: red;
+}
+
+@media (max-width: 1024px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .play input {
+        height: 70px;
+        font-size: 30px;
+        display: block;
+        margin: 20px auto;
+
+    }
+
+    .play button {
+        height: 74px;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+}
